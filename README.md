@@ -109,7 +109,6 @@ If the number of coset assignments is larger than that, it prints a warning and 
 - Use `SEARCH_MAX_LEN <= 8` initially
 - Keep `LAYOUT_MODE="row"` for first scans; switch to `"row+coset"` later for the best candidates
 
----
 
 ## 7) Optional CSV export
 
