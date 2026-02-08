@@ -3,7 +3,6 @@
 This folder contains a Python script for **static** (algebraic) numerics for **directional (route-generated) CSS qLDPC codes** in the **square-grid checkerboard model**.
 
 
----
 
 ## 1) Requirements
 
@@ -12,13 +11,13 @@ This folder contains a Python script for **static** (algebraic) numerics for **d
 
 If you want, you *can* use pandas in Spyder, but the script does **not** depend on it.
 
----
+
 
 ## 2) Files
 
 - `dircode_numerics.py`  
 
----
+
 
 ## 3) How to run 
 
@@ -35,7 +34,7 @@ If you want, you *can* use pandas in Spyder, but the script does **not** depend 
 4. Run file.
 
 
----
+
 
 ## 4) Two main modes
 
@@ -82,7 +81,7 @@ The scan:
 
 You will see the top candidates by a simple score (higher distance lower bound first, then larger `k`, then shorter word).
 
----
+
 
 ## 5) Layout options
 
@@ -101,7 +100,7 @@ You will see the top candidates by a simple score (higher distance lower bound f
 **Important:** The script caps coset enumeration by `max_coset_layouts` (default 256).  
 If the number of coset assignments is larger than that, it prints a warning and skips coset enumeration.
 
----
+
 
 ## 6) Practical tips (avoid slow runs)
 
