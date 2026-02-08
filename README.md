@@ -15,7 +15,7 @@ If you want, you *can* use pandas in Spyder, but the script does **not** depend 
 
 ## 2) Files
 
-- `dircode_numerics.py`  
+- `dir_code_numerics.py`  
 
 
 
