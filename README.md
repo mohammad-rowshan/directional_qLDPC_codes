@@ -1,4 +1,4 @@
-# Directional-code numerics in Spyder (console tables)
+# Directional-code Numerics
 
 This folder contains a Python script for **static** (algebraic) numerics for **directional (route-generated) CSS qLDPC codes** in the **square-grid checkerboard model**.
 
