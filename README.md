@@ -16,20 +16,14 @@ If you want, you *can* use pandas in Spyder, but the script does **not** depend 
 
 ## 2) Files
 
-- `dircode_numerics_spyder.py`  
-  Main script. Open it in Spyder and press **F5** to run.
+- `dircode_numerics.py`  
 
 ---
 
-## 3) How to run in Spyder
+## 3) How to run 
 
-1. Put `dircode_numerics_spyder.py` in a folder you control (e.g. `~/dircodes/`).
-2. Open Spyder.
-3. In Spyder, set the **working directory** to that folder:
-   - Top toolbar: “Current working directory” dropdown
-   - Or: `Tools → Preferences → Current working directory`
-4. Open the script file.
-5. Scroll to the bottom section:
+1. Open the script file.
+2. Scroll to the bottom section:
 
    ```python
    if __name__ == "__main__":
@@ -37,10 +31,9 @@ If you want, you *can* use pandas in Spyder, but the script does **not** depend 
        ...
    ```
 
-6. Edit the parameters you want.
-7. Press **F5** (Run file).
+3. Edit the parameters you want.
+4. Run file.
 
-The results will print in the **IPython Console** as a table.
 
 ---
 
@@ -59,7 +52,7 @@ DIST_MAX = 4             # 0 disables distance search
 ```
 
 What you get:
-- A console table with columns like `word`, `w`, `|P|`, `Lx`, `Ly`, `n`, `k`, `dX`, `dZ`, ...
+- A table with columns like `word`, `w`, `|P|`, `Lx`, `Ly`, `n`, `k`, `dX`, `dZ`, ...
 
 Interpretation of `dX` / `dZ`:
 - If `DIST_MAX = 0`, distances are not computed and shown as `-`
@@ -131,17 +124,3 @@ OUTDIR = "out"
 This will save:
 - `out/bench_results.csv` for BENCH mode
 - `out/search_results.csv` for SEARCH mode
-
----
-
-## 8) What this script does NOT do (by design)
-
-- It does not build syndrome-extraction circuits
-- It does not run decoders (BP, UF, etc.)
-- It does not estimate thresholds
-
-It’s a **static, algebraic** exploration tool to quickly map `(W, Lx, Ly, layout)` → `(n, k, dX, dZ)` up to a small distance cutoff.
-
----
-
-If you want, tell me your target hardware footprint (e.g. 24×12, 30×18) and your preferred check weights, and I can suggest search settings (word lengths, filters, and layouts) that are less likely to waste compute time.
