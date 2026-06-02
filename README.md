@@ -3,7 +3,7 @@
 This folder contains a Python script for **static** (algebraic) numerics for **directional (route-generated) CSS qLDPC codes** in the **square-grid checkerboard model**.
 
 This software is based on the following paper:
-M. Rowshan, ``Structural Analysis of Directional qLDPC codes,'' arXiv:XXXX.YYYYY.
+M. Rowshan, ``Structural Analysis of Directional qLDPC codes,'' arXiv:2602.19057.
 
 
 
