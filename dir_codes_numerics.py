@@ -32,12 +32,6 @@ What it does (static code properties):
 - Optionally enumerate coset-constant layouts derived from Δ_odd(W)
 - Optionally scan over words (exhaustive) for a fixed torus and report best candidates
 
-Design goal:
-- Run by pressing F5 in Spyder (no CLI / argparse needed).
-- Print results as plain tables in the console.
-- Optional CSV export (OFF by default).
-- No LaTeX table generation.
-
 Notes:
 - Distance search is combinatorial; keep DIST_MAX small (e.g., 3–5 for n=64; 2–3 for n>150).
 - This script focuses on the square-grid (N,E,S,W) instantiation used in the manuscript’s main case study.
@@ -53,7 +47,7 @@ from typing import Dict, Iterable, List, Optional, Sequence, Tuple
 
 
 # =============================================================================
-# 0) Helpers
+# 0) Helper Functions
 # =============================================================================
 
 def popcount(x: int) -> int:
@@ -722,7 +716,7 @@ def scan_words(
 
 
 # =============================================================================
-# 8) Spyder entry points (edit CONFIG below and press F5)
+# 8) Entry points (edit CONFIG below and run)
 # =============================================================================
 
 def run_bench(
@@ -833,7 +827,7 @@ def run_search(
 
 
 # =============================================================================
-# 9) EDIT THIS CONFIG IN SPYDER AND RUN (F5)
+# 9) EDIT THIS CONFIG AND RUN
 # =============================================================================
 
 if __name__ == "__main__":
